@@ -1,0 +1,5 @@
+based_on_style: Google
+line_width: 80
+tab_size: 2
+use_tab: False
+keyword_case: upper-case

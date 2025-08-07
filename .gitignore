@@ -5,10 +5,10 @@
 build/
 cmake-build-*/
 
-# IDE Specific
-.idea
-.vscode
-.DS_Store
+# Secrets
+key.txt
+*.secrets.dec
+*.dec
 
 # Compiled Object files
 *.slo

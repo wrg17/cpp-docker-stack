@@ -1,0 +1,16 @@
+# Git repository files
+.git
+.gitignore
+
+# Build outputs
+build/
+cmake-build-*/
+
+# Secrets
+all_changes/secrets/
+
+# IDE configuration
+.idea/
+
+# Misc
+*.md

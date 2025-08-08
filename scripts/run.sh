@@ -4,10 +4,11 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 SRC_DIR="backend"
-BUILD_DIR="$SRC_DIR/build"
+PRESET="${1:-debug}"
 
-mkdir -p "$BUILD_DIR"
-cmake -S "$SRC_DIR" -B "$BUILD_DIR" -DCMAKE_BUILD_TYPE=Debug
-cmake --build "$BUILD_DIR" -j
+cd "$SRC_DIR"
 
-"$BUILD_DIR/cpp_server"
+cmake --preset "$PRESET"
+cmake --build --preset "$PRESET" --parallel
+
+"./build/${PRESET}/cpp_server"

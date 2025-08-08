@@ -1,16 +1,67 @@
 # Git repository files
 .git
 .gitignore
+.gitattributes
+.gitmodules
 
 # Build outputs
 build/
 cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+Testing/
+CTestTestfile.cmake
+Makefile
+out/
+bin/
+
+# Debug symbols (macOS)
+*.dSYM/
+
+# Logs and diagnostics
+*.log
+log/
+logs/
+
+# Coverage and profiling artifacts
+.coverage
+coverage/
+*.gcda
+*.gcno
+*.gcov
+*.lcov
+*.profraw
+*.profdata
 
 # Secrets
-all_changes/secrets/
+secrets/
+*.env
+*.enc
+*.dec
+.sops.yaml
+key.txt
+.ssh/
+*.pem
+*.key
 
 # IDE configuration
 .idea/
+.vscode/
+.vscode-*
+*.iml
+*.sublime-*
+*.code-workspace
+
+# Caches and temp files
+.cache/
+.clangd/
+.clang-tidy-cache/
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
 
 # Misc
 *.md

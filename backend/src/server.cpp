@@ -20,7 +20,7 @@ using       tcp   = asio::ip::tcp;
 
 int main() {
   try {
-    std::cout << std::nounitbuf;
+    std::cout << std::unitbuf;
     asio::io_context ioc{1};
 
     std::cout << "🚀 C++ Server starting...\n";

@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+      target: final
+      args:
+        - CMAKE_PRESET=release
+    ports:
+      - "8080:8080"
